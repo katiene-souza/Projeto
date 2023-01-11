@@ -18,7 +18,7 @@ form.addEventListener ('submit', (event) => {
             senha: senha.value
         })
          localStorage.setItem('listaUsuario', JSON.stringify(listaUsuario))
-         window.location.href = ('http://127.0.0.1:5500/modulo1/projeto/index.html')
+         window.location.href = ('../index.html')
      }
     else {
         alert('email ou senha incorretos!')
