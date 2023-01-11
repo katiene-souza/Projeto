@@ -31,7 +31,7 @@ form.addEventListener ('submit', (event) => {
             
         })
         if(email.value == usuarioValidado.email && senha.value == usuarioValidado.senha) {
-            window.location.href = ('http://127.0.0.1:5500/modulo1/projeto/gerenciador.html')
+            window.location.href = ('../gerenciador.html')
         } else {
             alert('email ou senha incorretos!')
             email.setAttribute('style', 'border-color: red')
