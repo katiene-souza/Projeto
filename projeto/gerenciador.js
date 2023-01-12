@@ -91,7 +91,7 @@ const salvarTarefa = async (tarefas) => {
 }
 
 const getTarefa = async (id) => {
-    const apiResposta = await fetch(`https://api-json.herokuapp.com/${id}`)
+    const apiResposta = await fetch(`https://api-json.herokuapp.com/task/${id}`)
     const tarefa = await apiResposta.json()
     return tarefa
 }
