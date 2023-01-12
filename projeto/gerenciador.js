@@ -108,7 +108,7 @@ const editTarefa = async (id) => {
 
 
 const edicaoTarefa = async (id, tarefas) => {
-    await fetch(`https://api-json.herokuapp.com/${id}`, {
+    await fetch(`https://api-json.herokuapp.com/task/${id}`, {
         method: "PUT",
         headers: {
             'Accept': 'application/json, text/plain, */* ',
@@ -124,7 +124,7 @@ const edicaoTarefa = async (id, tarefas) => {
 }
 
 const deletarTarefa = async (id) => {
-    await fetch(`https://api-json.herokuapp.com/${id}`, {
+    await fetch(`https://api-json.herokuapp.com/task/${id}`, {
         method: "DELETE"
     })
     getTarefas()
