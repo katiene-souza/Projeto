@@ -41,7 +41,7 @@ form.addEventListener('submit', (event) => {
 
 
 const criarTarefa = async (tarefas) => {
-    await fetch('http://localhost:3000/task', {
+    await fetch('https://api-json.herokuapp.com/task', {
         method: 'POST',
         headers: {
             'Accept': 'application/json, text/plain, */* ',
@@ -57,7 +57,7 @@ const criarTarefa = async (tarefas) => {
 }
 
 const getTarefas = async () => {
-    const apiResposta = await fetch('http://localhost:3000/task')
+    const apiResposta = await fetch('https://api-json.herokuapp.com/task')
     const tarefas = await apiResposta.json()
     const tarefasTbory = document.getElementById('tbory-conteudo')
     tarefasTbory.innerHTML = ''
@@ -91,7 +91,7 @@ const salvarTarefa = async (tarefas) => {
 }
 
 const getTarefa = async (id) => {
-    const apiResposta = await fetch(`http://localhost:3000/task/${id}`)
+    const apiResposta = await fetch(`https://api-json.herokuapp.com/${id}`)
     const tarefa = await apiResposta.json()
     return tarefa
 }
@@ -108,7 +108,7 @@ const editTarefa = async (id) => {
 
 
 const edicaoTarefa = async (id, tarefas) => {
-    await fetch(`http://localhost:3000/task/${id}`, {
+    await fetch(`https://api-json.herokuapp.com/${id}`, {
         method: "PUT",
         headers: {
             'Accept': 'application/json, text/plain, */* ',
@@ -124,7 +124,7 @@ const edicaoTarefa = async (id, tarefas) => {
 }
 
 const deletarTarefa = async (id) => {
-    await fetch(`http://localhost:3000/task/${id}`, {
+    await fetch(`https://api-json.herokuapp.com/${id}`, {
         method: "DELETE"
     })
     getTarefas()
