@@ -42,6 +42,13 @@ body {
     position: fixed;
 }
 
+#sair{
+    position: fixed;
+    z-index: 1;
+    padding-left: 10px;
+    padding-top: 20px;
+}
+
 #poligono {
     position: fixed;
     right: 0;
