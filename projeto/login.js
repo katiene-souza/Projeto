@@ -31,7 +31,7 @@ form.addEventListener ('submit', (event) => {
             
         })
         if(email.value == usuarioValidado.email && senha.value == usuarioValidado.senha) {
-            window.location.href = ('./projeto/gerenciador.html')
+            //window.location.href = ('./projeto/gerenciador.html')
         } else {
             alert('email ou senha incorretos!')
             email.setAttribute('style', 'border-color: red')
