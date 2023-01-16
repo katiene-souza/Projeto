@@ -61,7 +61,7 @@ function validarEmail(email) {
 }
 
 function validarSenha(senha) {
-    let senhaPadrao = /^(?=.*[0-9])(?=.*[!@#$%^&*])[a-zA-Z0-9!@#$%^&*]{6,16}$/;
+    let senhaPadrao = /^(?=.*[0-9])[a-zA-Z0-9]{6,16}$/;
     return senhaPadrao.test(senha);
 }
 
