@@ -5,7 +5,7 @@ const senha = document.querySelector('#senha')
 form.addEventListener ('submit', (event) => {
     event.preventDefault()
     if(email.value === '' && senha.value === ''){
-        alert('você precisa preencher todos os campos')
+        alert('Você precisa preencher todos os campos!')
         email.setAttribute('style', 'border-color: red')
         senha.setAttribute('style', 'border-color: red')
        
@@ -33,14 +33,14 @@ form.addEventListener ('submit', (event) => {
         if(email.value == usuarioValidado.email && senha.value == usuarioValidado.senha) {
             window.location.href = ('../gerenciador.html')
         } else {
-            alert('email ou senha incorretos!')
+            alert('Email ou senha incorretos!')
             email.setAttribute('style', 'border-color: red')
             senha.setAttribute('style', 'border-color: red')
         }
         
     }
     else {
-        alert('email ou senha incorretos!')
+        alert('Email ou senha incorretos!')
         email.setAttribute('style', 'border-color: red')
         senha.setAttribute('style', 'border-color: red')
     }
