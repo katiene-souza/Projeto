@@ -6,7 +6,7 @@ const senha = document.querySelector('#senha')
 form.addEventListener ('submit', (event) => {
     event.preventDefault()
     if(nome.value === '' && email.value === '' && senha.value === ''){
-        alert('você precisa preencher todos os campos')
+        alert('Você precisa preencher todos os campos!')
         nome.setAttribute('style', 'border-color: red')
         email.setAttribute('style', 'border-color: red')
         senha.setAttribute('style', 'border-color: red')
@@ -21,7 +21,7 @@ form.addEventListener ('submit', (event) => {
          window.location.href = ('../index.html')
      }
     else {
-        alert('email ou senha incorretos!')
+        alert('Nome, email ou senha incorretos!')
     }
 })
 
